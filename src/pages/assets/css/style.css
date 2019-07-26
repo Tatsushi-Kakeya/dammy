@@ -1915,7 +1915,7 @@ nav.navbar.stick {
 	}
 
 	.navbar-custom li a,
-.navbar-custom li a, .navbar-custom .dropdown-menu > li:last-child > a {
+	.navbar-custom li a, .navbar-custom .dropdown-menu > li:last-child > a {
   border-bottom: 1px solid #f5f5f5;
 }
 

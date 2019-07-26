@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from 'gatsby'
+// import Image from "gatsby-image"
 import './assets/css/style.css'
 import './assets/css/custom.css'
 
@@ -10,176 +11,22 @@ export default class IndexPage extends React.Component {
 	{/* <!-- NAVIGATION --> */}
 	<nav className="navbar navbar-custom navbar-fixed-top" >
 
-			<div className="container">
-		
-				<div className="navbar-header">
-					<button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span className="sr-only">Toggle navigation</span>
-						<span className="icon-bar"></span>
-						<span className="icon-bar"></span>
-						<span className="icon-bar"></span>
-					</button>
-					<Link className="navbar-brand" to="index.html">Insee</Link>
-				</div>
-		
-				<div className="collapse navbar-collapse" id="custom-collapse">
-		
-					<ul className="nav navbar-nav navbar-right">
-		
-						<li className="dropdown">
-							<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Home</Link>
-							<ul className="dropdown-menu">
-								<li><Link to="index.html">Image Parallax 1</Link></li>
-								<li><Link to="index-2.html">Image Parallax 2</Link></li>
-								<li><Link to="index-3.html">Slider Parallax 1</Link></li>
-								<li><Link to="index-4.html">Slider Parallax 2</Link></li>
-								<li><Link to="index-5.html">Text rotator 1</Link></li>
-								<li><Link to="index-6.html">Text rotator 2</Link></li>
-								<li><Link to="#">Video background 1 comming soon</Link></li>
-								<li><Link to="#">Video background 2 comming soon</Link></li>
-							</ul>
-						</li>
-		
-						<li><Link to="about.html">About</Link></li>
-		
-						<li className="dropdown">
-							<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Portfolio</Link>
-							<ul className="dropdown-menu" role="menu">
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Boxed</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-boxed-col2.html">2 Columns</Link></li>
-										<li><Link to="portfolio-boxed-col3.html">3 Columns</Link></li>
-										<li><Link to="portfolio-boxed-col4.html">4 Columns</Link></li>
-										<li><Link to="portfolio-boxed-hover-black.html">Hover Black</Link></li>
-										<li><Link to="portfolio-boxed-hover-gradient.html">Hover Gradient</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Boxed - Gutter</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-boxed-gutter-col2.html">2 Columns</Link></li>
-										<li><Link to="portfolio-boxed-gutter-col3.html">3 Columns</Link></li>
-										<li><Link to="portfolio-boxed-gutter-col4.html">4 Columns</Link></li>
-										<li><Link to="portfolio-boxed-gutter-hover-black.html">Hover Black</Link></li>
-										<li><Link to="portfolio-boxed-gutter-hover-gradient.html">Hover Gradient</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Boxed - Masonry</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-boxed-masonry-col2.html">2 Columns</Link></li>
-										<li><Link to="portfolio-boxed-masonry-col3.html">3 Columns</Link></li>
-										<li><Link to="portfolio-boxed-masonry-col4.html">4 Columns</Link></li>
-										<li><Link to="portfolio-boxed-masonry-hover-black.html">Hover Black</Link></li>
-										<li><Link to="portfolio-boxed-masonry-hover-gradient.html">Hover Gradient</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Wide</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-wide-col2.html">2 Columns</Link></li>
-										<li><Link to="portfolio-wide-col3.html">3 Columns</Link></li>
-										<li><Link to="portfolio-wide-col4.html">4 Columns</Link></li>
-										<li><Link to="portfolio-wide-hover-black.html">Hover Black</Link></li>
-										<li><Link to="portfolio-wide-hover-gradient.html">Hover Gradient</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Wide - Gutter</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-wide-gutter-col2.html">2 Columns</Link></li>
-										<li><Link to="portfolio-wide-gutter-col3.html">3 Columns</Link></li>
-										<li><Link to="portfolio-wide-gutter-col4.html">4 Columns</Link></li>
-										<li><Link to="portfolio-wide-gutter-hover-black.html">Hover Black</Link></li>
-										<li><Link to="portfolio-wide-gutter-hover-gradient.html">Hover Gradient</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Wide - Masonry</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-wide-masonry-col2.html">2 Columns</Link></li>
-										<li><Link to="portfolio-wide-masonry-col3.html">3 Columns</Link></li>
-										<li><Link to="portfolio-wide-masonry-col4.html">4 Columns</Link></li>
-										<li><Link to="portfolio-wide-masonry-hover-black.html">Hover Black</Link></li>
-										<li><Link to="portfolio-wide-masonry-hover-gradient.html">Hover Gradient</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Single</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="portfolio-single-1.html">Single 1</Link></li>
-										<li><Link to="portfolio-single-2.html">Single 2</Link></li>
-										<li><Link to="portfolio-single-3.html">Single 3</Link></li>
-										<li><Link to="portfolio-single-4.html">Single 4</Link></li>
-										<li><Link to="portfolio-single-5.html">Single 5</Link></li>
-										<li><Link to="portfolio-single-6.html">Single 6</Link></li>
-										<li><Link to="portfolio-single-7.html">Single 7</Link></li>
-									</ul>
-								</li>
-		
-							</ul>
-						</li>
-		
-						<li className="dropdown">
-							<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Blog</Link>
-							<ul className="dropdown-menu" role="menu">
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Grid</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="blog-grid-2col.html">2 Columns</Link></li>
-										<li><Link to="blog-grid-3col.html">3 Columns</Link></li>
-										<li><Link to="blog-grid-4col.html">4 Columns</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Standart</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="blog-standart-1.html">Standart 1</Link></li>
-										<li><Link to="blog-standart-2.html">Standart 2</Link></li>
-									</ul>
-								</li>
-		
-								<li className="dropdown">
-									<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Single</Link>
-									<ul className="dropdown-menu">
-										<li><Link to="blog-single.html">Single 1</Link></li>
-										<li><Link to="blog-single-2.html">Single 2</Link></li>
-									</ul>
-								</li>
-		
-							</ul>
-						</li>
-		
-						<li className="dropdown">
-							<Link to="#" className="dropdown-toggle" data-toggle="dropdown">Features</Link>
-							<ul className="dropdown-menu" role="menu">
-								<li><Link to="comp-alerts-wells.html"><i className="fa fa-bolt"></i> Alerts and Wells</Link></li>
-								<li><Link to="comp-buttons.html"><i className="fa fa-link fa-sm"></i> Buttons</Link></li>
-								<li><Link to="comp-collapses-tabs.html"><i className="fa fa-tasks"></i> Collapses &amp; Tabs</Link></li>
-								<li><Link to="comp-content-box.html"><i className="fa fa-list-alt"></i> Contents Box</Link></li>
-								<li><Link to="comp-forms.html"><i className="fa fa-check-square-o"></i> Forms</Link></li>
-								<li><Link to="comp-icons.html"><i className="fa fa-star"></i> Icons</Link></li>
-								<li><Link to="comp-progress-bars.html"><i className="fa fa-server"></i> Progress Bars</Link></li>
-								<li><Link to="comp-typography.html"><i className="fa fa-font"></i> Typography</Link></li>
-							</ul>
-						</li>
-		
-						<li><Link to="contact.html">Contact</Link></li>
-		
-					</ul>
-				</div>
-		
+		<div className="container">
+			<div className="navbar-header">
+				<Link className="navbar-brand" to="index.html">FULLSPEED TECHNOLOGIES.inc</Link>
 			</div>
+		
+			<div className="collapse navbar-collapse" id="custom-collapse">
+				<ul className="nav navbar-nav navbar-right">
+					<li className="dropdown"><Link to="/" className="dropdown-toggle" data-toggle="dropdown">Home</Link></li>
+					<li><Link to="/">About</Link></li>
+					<li className="dropdown"><Link to="/" className="dropdown-toggle" data-toggle="dropdown">Recruit</Link></li>
+					<li className="dropdown"><Link to="/" className="dropdown-toggle" data-toggle="dropdown">Blog</Link></li>
+					<li className="dropdown"><Link to="/" className="dropdown-toggle" data-toggle="dropdown">Features</Link></li>
+					<li><Link to="/">Contact</Link></li>
+				</ul>
+			</div>
+		</div>
 			
 			{/* <!--[ MOBILE-MENU-AREA START ]-->  */}
 			<div className="mobile-menu-area">
@@ -190,146 +37,11 @@ export default class IndexPage extends React.Component {
 								<div className="mobile-menu">
 									<nav id="mobile-nav">
 										<ul>
-											<li>
-												<Link to="#">Home</Link>
-												<ul>
-													<li><Link to="index.html">Image Parallax 1</Link></li>
-													<li><Link to="index-2.html">Image Parallax 2</Link></li>
-													<li><Link to="index-3.html">Slider Parallax 1</Link></li>
-													<li><Link to="index-4.html">Slider Parallax 2</Link></li>
-													<li><Link to="index-5.html">Text rotator 1</Link></li>
-													<li><Link to="index-6.html">Text rotator 2</Link></li>
-													<li><Link to="#">Video background 1 comming soon</Link></li>
-													<li><Link to="#">Video background 2 comming soon</Link></li>
-												</ul>
-											</li>
-							
+											<li><Link to="#">Home</Link></li>
 											<li><Link to="about.html">About</Link></li>
-							
-											<li>
-												<Link to="#">Portfolio</Link>
-												<ul>
-													<li>
-														<Link to="#">Boxed</Link>
-														<ul>
-															<li><Link to="portfolio-boxed-col2.html">2 Columns</Link></li>
-															<li><Link to="portfolio-boxed-col3.html">3 Columns</Link></li>
-															<li><Link to="portfolio-boxed-col4.html">4 Columns</Link></li>
-															<li><Link to="portfolio-boxed-hover-black.html">Hover Black</Link></li>
-															<li><Link to="portfolio-boxed-hover-gradient.html">Hover Gradient</Link></li>
-														</ul>
-													</li>
-							
-													<li>
-														<Link to="#">Boxed - Gutter</Link>
-														<ul>
-															<li><Link to="portfolio-boxed-gutter-col2.html">2 Columns</Link></li>
-															<li><Link to="portfolio-boxed-gutter-col3.html">3 Columns</Link></li>
-															<li><Link to="portfolio-boxed-gutter-col4.html">4 Columns</Link></li>
-															<li><Link to="portfolio-boxed-gutter-hover-black.html">Hover Black</Link></li>
-															<li><Link to="portfolio-boxed-gutter-hover-gradient.html">Hover Gradient</Link></li>
-														</ul>
-													</li>
-													<li>
-														<Link to="#">Boxed - Masonry</Link>
-														<ul>
-															<li><Link to="portfolio-boxed-masonry-col2.html">2 Columns</Link></li>
-															<li><Link to="portfolio-boxed-masonry-col3.html">3 Columns</Link></li>
-															<li><Link to="portfolio-boxed-masonry-col4.html">4 Columns</Link></li>
-															<li><Link to="portfolio-boxed-masonry-hover-black.html">Hover Black</Link></li>
-															<li><Link to="portfolio-boxed-masonry-hover-gradient.html">Hover Gradient</Link></li>
-														</ul>
-													</li>
-													<li>
-														<Link to="#">Wide</Link>
-														<ul>
-															<li><Link to="portfolio-wide-col2.html">2 Columns</Link></li>
-															<li><Link to="portfolio-wide-col3.html">3 Columns</Link></li>
-															<li><Link to="portfolio-wide-col4.html">4 Columns</Link></li>
-															<li><Link to="portfolio-wide-hover-black.html">Hover Black</Link></li>
-															<li><Link to="portfolio-wide-hover-gradient.html">Hover Gradient</Link></li>
-														</ul>
-													</li>
-							
-													<li>
-														<Link to="#">Wide - Gutter</Link>
-														<ul>
-															<li><Link to="portfolio-wide-gutter-col2.html">2 Columns</Link></li>
-															<li><Link to="portfolio-wide-gutter-col3.html">3 Columns</Link></li>
-															<li><Link to="portfolio-wide-gutter-col4.html">4 Columns</Link></li>
-															<li><Link to="portfolio-wide-gutter-hover-black.html">Hover Black</Link></li>
-															<li><Link to="portfolio-wide-gutter-hover-gradient.html">Hover Gradient</Link></li>
-														</ul>
-													</li>
-							
-													<li>
-														<Link to="#">Wide - Masonry</Link>
-														<ul>
-															<li><Link to="portfolio-wide-masonry-col2.html">2 Columns</Link></li>
-															<li><Link to="portfolio-wide-masonry-col3.html">3 Columns</Link></li>
-															<li><Link to="portfolio-wide-masonry-col4.html">4 Columns</Link></li>
-															<li><Link to="portfolio-wide-masonry-hover-black.html">Hover Black</Link></li>
-															<li><Link to="portfolio-wide-masonry-hover-gradient.html">Hover Gradient</Link></li>
-														</ul>
-													</li>
-							
-													<li>
-														<Link to="#">Single</Link>
-														<ul>
-															<li><Link to="portfolio-single-1.html">Single 1</Link></li>
-															<li><Link to="portfolio-single-2.html">Single 2</Link></li>
-															<li><Link to="portfolio-single-3.html">Single 3</Link></li>
-															<li><Link to="portfolio-single-4.html">Single 4</Link></li>
-															<li><Link to="portfolio-single-5.html">Single 5</Link></li>
-															<li><Link to="portfolio-single-6.html">Single 6</Link></li>
-															<li><Link to="portfolio-single-7.html">Single 7</Link></li>
-														</ul>
-													</li>
-							
-												</ul>
-											</li>
-							
-											<li>
-												<Link to="#">Blog</Link>
-												<ul>
-													<li>
-														<Link to="#">Grid</Link>
-														<ul>
-															<li><Link to="blog-grid-2col.html">2 Columns</Link></li>
-															<li><Link to="blog-grid-3col.html">3 Columns</Link></li>
-															<li><Link to="blog-grid-4col.html">4 Columns</Link></li>
-														</ul>
-													</li>
-													<li>
-														<Link to="#">Standart</Link>
-														<ul>
-															<li><Link to="blog-standart-1.html">Standart 1</Link></li>
-															<li><Link to="blog-standart-2.html">Standart 2</Link></li>
-														</ul>
-													</li>
-													<li>
-														<Link to="#">Single</Link>
-														<ul>
-															<li><Link to="blog-single.html">Single 1</Link></li>
-															<li><Link to="blog-single-2.html">Single 2</Link></li>
-														</ul>
-													</li>
-							
-												</ul>
-											</li>
-											<li>
-												<Link to="#">Features</Link>
-												<ul>
-													<li><Link to="comp-alerts-wells.html"><i className="fa fa-bolt"></i> Alerts and Wells</Link></li>
-													<li><Link to="comp-buttons.html"><i className="fa fa-link fa-sm"></i> Buttons</Link></li>
-													<li><Link to="comp-collapses-tabs.html"><i className="fa fa-tasks"></i> Collapses &amp; Tabs</Link></li>
-													<li><Link to="comp-content-box.html"><i className="fa fa-list-alt"></i> Contents Box</Link></li>
-													<li><Link to="comp-forms.html"><i className="fa fa-check-square-o"></i> Forms</Link></li>
-													<li><Link to="comp-icons.html"><i className="fa fa-star"></i> Icons</Link></li>
-													<li><Link to="comp-progress-bars.html"><i className="fa fa-server"></i> Progress Bars</Link></li>
-													<li><Link to="comp-typography.html"><i className="fa fa-font"></i> Typography</Link></li>
-												</ul>
-											</li>
+											<li><Link to="#">Portfolio</Link></li>
+											<li><Link to="#">Blog</Link></li>
+											<li><Link to="#">Features</Link></li>
 											<li><Link to="contact.html">Contact</Link></li>
 										</ul>
 									</nav>
@@ -344,25 +56,80 @@ export default class IndexPage extends React.Component {
 	{/* <!-- /NAVIGATION --> */}
 
 	{/* <!-- HOME --> */}
-	<div id="home" className="module-hero module-parallax module-fade module-full-height white-bg-30" data-background="assets/images/section-1.jpg">
-
+	<div id="home" className="module-hero module-parallax module-fade module-full-height white-bg-30">
+	<img src="./assets/images-fullspeed/oppotunities_2.png" alt="top" />
 		<div className="hs-caption container">
 			<div className="caption-content hm-drk">
 				<div className="hs-title-size-4 font-alt m-b-30">
-					Welcome to Insee
-				</div>
-				<div className="hs-title-size-1 font-inc">
-					A wonderful serenity has taken possession of my entire soul, like these<br/> sweet mornings of spring which I enjoy with my whole heart
-				</div>
-				<div className="sld-btn">
-					<Link to="#">Contact Us </Link>
+					Welcome to FULLSPEED
 				</div>
 			</div>
 		</div>
-
 	</div  >
 	{/* <!-- /HOME --> */}
+	<div>
+		<h1>Our Story</h1>
+		<h2>WHO WE ARE</h2>
+		<p>
+			Fullspeed Technologies Inc. is composed of Japanese and Filipino Software Developers collaborating to bring the<br/>
+			best products to our customers. We are a product-based company and not just a project-based BPO company.
+		</p>
 
+		<h2>WHEN WE STARTED</h2>
+		<p>
+			Born from Fullspeed Inc., the biggest advertising technology and marketing company in Japan, the company was<br/>
+			established in one of the most advanced area in the queen city of the South, Cebu, Philippines. It officially runs as<br/>
+			a company in Cebu last January 9, 2017.Now, the company has gathered all the most talented engineers working<br/>
+			to keep our customers and stakeholders satisfied.
+		</p>
+		<img src="./assets/images-fullspeed/ourstory_1.png" alt="Our story" />
+		
+		<h1>Vision and Mission</h1>
+		<p>
+			We, the Fullspeed Technologies Inc. Cebu team, live through our vision, “We create organizations and businesses that make people<br/>
+			happy and the world borderless”. And we work along with our mission: “Beyond such borders as countries and organizations, We<br/>
+			lead all businesses to be successful based on our technologies and business development skills. We pursue to create creative and<br/>
+			high performance organizations that make all our stakeholders happy.”
+		</p>
+	 </div>
+
+
+	 <div>
+		 <h1>Our Services</h1>
+		 <p>Over the years of being in the industry, we’ve made sure to have a lineup of services.</p>
+	 </div>
+	 <div>
+		 <img src="./assets/images-fullspeed/Logomakr_4eJ66Y_e1519954970791.png" alt="Software Consulting" />
+		 <h1>Software Consulting</h1>
+		 <p>
+			Implement Research & Development<br/>
+			from the global perspective of<br/>
+			Advertising Technology fields including<br/>
+			Demand Side Platform, Video Advertising<br/>
+			Network, Affiliate Service Provider<br/>
+		</p>
+
+		<img src="./assets/images-fullspeed/Logomakr_3sKOka_e1519955674880.png" alt="Digital Marketing" />
+		 <h1>Digital Marketing</h1>
+		 <p>
+			Comprehensive digital marketing<br/>
+			campany which is a consultant of SEO,<br/>
+			SEM, and SMM and also a trading desk of<br/>
+			Programmatic Advertising.<br/>
+		</p>
+
+		<img src="./assets/images-fullspeed/Logomakr_9hPily_e1519955689241.png" alt="Offshore Development Centre" />
+		 <h1>Offshore Development Centre</h1>
+		 <p>
+			Our offshore development team are<br/>
+			experienced in areas requiring<br/>
+			advanced technologies such as ad<br/>
+			technology. This team provides efficient<br/>
+			service without sacrificing efficiency and<br/>
+			quality. It is also characterized by direct<br/>
+			communication using English.<br/>
+		</p>
+	 </div>
 	{/* <!-- WRAPPER --> */}
 	<div className="wrapper">
 
@@ -384,10 +151,10 @@ export default class IndexPage extends React.Component {
 
 						<ul id="filters" className="filter font-inc">
 							<li><Link to="#" data-filter="*" className="current wow fadeInUp">All</Link></li>
-							<li><Link to="#" data-filter=".illustration" className="wow fadeInUp" data-wow-delay="0.2s">Illustration</Link></li>
-							<li><Link to="#" data-filter=".marketing" className="wow fadeInUp" data-wow-delay="0.4s">Marketing</Link></li>
-							<li><Link to="#" data-filter=".photography" className="wow fadeInUp" data-wow-delay="0.6s">Photography</Link></li>
-							<li><Link to="#" data-filter=".webdesign" className="wow fadeInUp" data-wow-delay="0.8s">Web Design</Link></li>
+							<li><Link to="#" data-filter=".illustration" className="wow fadeInUp" data-wow-delay="0.2s">Sample</Link></li>
+							<li><Link to="#" data-filter=".marketing" className="wow fadeInUp" data-wow-delay="0.4s">Sample</Link></li>
+							<li><Link to="#" data-filter=".photography" className="wow fadeInUp" data-wow-delay="0.6s">Sample</Link></li>
+							<li><Link to="#" data-filter=".webdesign" className="wow fadeInUp" data-wow-delay="0.8s">Sample</Link></li>
 						</ul>
 
 					</div>
@@ -560,11 +327,6 @@ export default class IndexPage extends React.Component {
 					{/* <!-- POST ITEM --> */}
 					<div className="col-sm-6 col-md-4 col-lg-4">
 						<div className="post">
-							<div className="post-thumbnail">
-								<div className="post_video">
-									<iframe src="https://player.vimeo.com/video/123234110?title=0&byline=0&portrait=0" width="640" height="370"  allowFullScreen></iframe>
-								</div>
-							</div>
 							<div className="post-header">
 								<h2 className="post-title font-alt"><Link to="blog-single.html">Shore after the tide</Link></h2>
 								<div className="post-meta font-inc">
@@ -692,4 +454,3 @@ export default class IndexPage extends React.Component {
         );
     }
 }
-
